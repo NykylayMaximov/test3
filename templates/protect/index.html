@@ -1,0 +1,7 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h2>Старница авторизованного пользователя {{request.user.username}}</h2>
+<div>Здесь может содержатся персональная информация для каждого пользователя</div>
+<button> <a href="sign/logout">Выйти</a> </button>
+{% endblock %}
